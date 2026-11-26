@@ -14,8 +14,8 @@
   ],
   "aprende": [
     { "icone": "camadas", "t": "Os quatro níveis: menor, executor, topo e super" },
-    { "icone": "lista", "t": "O cartão de rotas: quem faz a primeira passada e quem confere" },
-    { "icone": "terminal", "t": "A ponte codex-exec.sh, read-only por padrão" },
+    { "icone": "lista", "t": "O cartêo de rotas: quem faz a primeira passada e quem confere" },
+    { "icone": "terminal", "t": "A ponte codex-exec.sh, read-only por padrêo" },
     { "icone": "check", "t": "Reconciliar: aceito, rejeitado com evidência ou em aberto" }
   ],
   "hero_alt": "Duas estações de trabalho diferentes lado a lado numa mesa escura, dividindo um caderno e uma folha impressa.",
@@ -30,7 +30,7 @@
           "icone": "check",
           "titulo": "Menor",
           "sub": "triagem, formatar, checar",
-          "detalhe": "Comece aqui. Classificar, extrair, conferir critério que já existe. Suba de nível só se errar. No kit, a ponte para o Codex usa este nível por padrão."
+          "detalhe": "Comece aqui. Classificar, extrair, conferir critério que já existe. Suba de nível só se errar. No kit, a ponte para o Codex usa este nível por padrêo."
         },
         {
           "icone": "robo",
@@ -43,28 +43,28 @@
           "titulo": "Topo",
           "sub": "planejar, decidir, revisar o difícil",
           "forte": true,
-          "detalhe": "Planejador e revisor de mudanças de risco. Um por time costuma bastar; ele lê os resumos dos outros, não o trabalho inteiro."
+          "detalhe": "Planejador e revisor de mudanças de risco. Um por time costuma bastar; ele lê os resumos dos outros, nêo o trabalho inteiro."
         },
         {
           "icone": "alvo",
           "titulo": "Super",
           "sub": "raro",
-          "detalhe": "Problema difícil ou decisão grande. Cada chamada consome a cota da sua assinatura; registre por que precisou."
+          "detalhe": "Problema difícil ou decisêo grande. Cada chamada consome a cota da sua assinatura; registre por que precisou."
         }
       ],
-      "legenda": "Regra 3 do ROTEAMENTO.md: revisão por outro modelo pega erros que o mesmo modelo não vê. Regra 4: agente chamando agente carrega as instruções do projeto; para pontes simples, pasta enxuta ou claude --bare."
+      "legenda": "Regra 3 do ROTEAMENTO.md: revisêo por outro modelo pega erros que o mesmo modelo nêo vê. Regra 4: agente chamando agente carrega as instruções do projeto; para pontes simples, pasta enxuta ou claude --bare."
     },
     {
       "tipo": "passos",
-      "titulo": "O cartão de rotas",
-      "sub": "Do kit agente-claude-codex (prompts/05-usar-os-dois.md). É ponto de partida editorial, não ranking medido: troque quando a sua evidência pedir.",
+      "titulo": "O cartêo de rotas",
+      "sub": "Do kit agente-claude-codex (prompts/05-usar-os-dois.md). É ponto de partida editorial, nêo ranking medido: troque quando a sua evidência pedir.",
       "passos": [
         {
           "titulo": "Planejar",
           "sub": "Claude → Codex critica",
           "texto": [
             "Um escreve o plano com escopo, suposições e testes de aceite, sem implementar. O outro revisa só lendo e ataca as suposições.",
-            "No máximo duas rodadas de revisão. Saída: plano v2 e um arquivo de revisão."
+            "No máximo duas rodadas de revisêo. Saída: plano v2 e um arquivo de revisêo."
           ]
         },
         {
@@ -72,7 +72,7 @@
           "sub": "Claude em branch → Codex revisa o diff",
           "texto": [
             "Um implementa numa branch (ou worktree, aula 5) e roda os testes. O outro recebe o briefing, o diff e o resultado dos testes, e procura bugs e regressões antes de cosmética.",
-            "Sem merge, deploy ou publicação sem você."
+            "Sem merge, deploy ou publicaçêo sem você."
           ]
         },
         {
@@ -84,11 +84,11 @@
           ]
         },
         {
-          "titulo": "Trocar de sessão",
+          "titulo": "Trocar de sessêo",
           "sub": "handoff → prime",
           "texto": [
             "O que passa de um para o outro é arquivo: AGENTS.md, tasks/current.md, handoffs/latest.md. É o assunto do vídeo abaixo.",
-            "Regra única do cartão: o segundo agente recebe o mesmo briefing e o artefato real, nunca um reconto."
+            "Regra única do cartêo: o segundo agente recebe o mesmo briefing e o artefato real, nunca um reconto."
           ]
         }
       ]
@@ -106,12 +106,12 @@
         {
           "rot": "Terminal · real: o Codex revisa o gera-avalia.sh da aula 4",
           "icone": "play",
-          "conteudo": "cd ~/treino-multi\nruntime/pontes/codex-exec.sh \"Responda apenas PONG\"; echo\nruntime/pontes/codex-exec.sh \"Revise, sem alterar nada, o arquivo gera-avalia.sh deste projeto. Procure bugs e riscos reais, não estilo. Responda em no máximo 6 linhas; a última linha é APROVADO ou FALTA: <o que corrigir>.\" > revisao-codex.txt\ncat revisao-codex.txt"
+          "conteudo": "cd ~/treino-multi\nruntime/pontes/codex-exec.sh \"Responda apenas PONG\"; echo\nruntime/pontes/codex-exec.sh \"Revise, sem alterar nada, o arquivo gera-avalia.sh deste projeto. Procure bugs e riscos reais, nêo estilo. Responda em no máximo 6 linhas; a última linha é APROVADO ou FALTA: <o que corrigir>.\" > revisao-codex.txt\ncat revisao-codex.txt"
         },
         {
-          "rot": "revisao.md · a reconciliação (você ou o Claude escreve)",
+          "rot": "revisao.md · a reconciliaçêo (você ou o Claude escreve)",
           "icone": "caneta",
-          "conteudo": "# Revisão do gera-avalia.sh pelo Codex — <data>\n\naceito: gerador que falha ou estoura o teto ainda era avaliado e podia aprovar sobra de rodada anterior → rodada com rc≠0 agora é REPROVADO sem avaliar (aula 4, aba \"Gerador caiu\")\naberto: verificar.mjs roda como bash os comandos do goal.md → o goal tem de ser arquivo confiável e protegido (curso 1: testes congelados; curso 4: o que o agente pode ler e rodar)\n\nconcordância não é prova: o que confirma cada \"aceito\" é o ensaio rodando de novo"
+          "conteudo": "# Revisêo do gera-avalia.sh pelo Codex — <data>\n\naceito: gerador que falha ou estoura o teto ainda era avaliado e podia aprovar sobra de rodada anterior → rodada com rc≠0 agora é REPROVADO sem avaliar (aula 4, aba \"Gerador caiu\")\naberto: verificar.mjs roda como bash os comandos do goal.md → o goal tem de ser arquivo confiável e protegido (curso 1: testes congelados; curso 4: o que o agente pode ler e rodar)\n\nconcordância nêo é prova: o que confirma cada \"aceito\" é o ensaio rodando de novo"
         }
       ],
       "saida": {
@@ -119,11 +119,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>## ensaio (codex falso)\nPONG\nsaída: 0\nsandbox recusado pela POLITICA: danger-full-access\nsaída: 2\n\n## real (Codex CLI 0.163.0, pela assinatura)\nPONG\n- Se `claude`/`timeout` falhar ou atingir o limite, o script ignora o erro e ainda pode aprovar arquivos deixados por uma rodada anterior.\n- `verificar.mjs` executa como Bash os comandos do `goal.md`; um arquivo não confiável pode executar ações arbitrárias.\n- FALTA: abortar ou reprovar quando o gerador falhar e restringir a execução de goals a arquivos confiáveis.</pre><p>A revisão foi feita sobre a primeira versão do gera-avalia.sh. O primeiro achado era real e foi corrigido (a versão da aula 4 já é a corrigida); o segundo ficou em aberto, com dono em outro curso. Os títulos com ## separam as execuções.</p>"
+            "html": "<pre>## ensaio (codex falso)\nPONG\nsaída: 0\nsandbox recusado pela POLITICA: danger-full-access\nsaída: 2\n\n## real (Codex CLI 0.163.0, pela assinatura)\nPONG\n- Se `claude`/`timeout` falhar ou atingir o limite, o script ignora o erro e ainda pode aprovar arquivos deixados por uma rodada anterior.\n- `verificar.mjs` executa como Bash os comandos do `goal.md`; um arquivo nêo confiável pode executar ações arbitrárias.\n- FALTA: abortar ou reprovar quando o gerador falhar e restringir a execuçêo de goals a arquivos confiáveis.</pre><p>A revisêo foi feita sobre a primeira versêo do gera-avalia.sh. O primeiro achado era real e foi corrigido (a versêo da aula 4 já é a corrigida); o segundo ficou em aberto, com dono em outro curso. Os títulos com ## separam as execuções.</p>"
           },
           {
             "rot": "Erro comum: o Codex fica parado",
-            "html": "<p>Sem pedido na linha de comando e com a entrada aberta, o <code>codex exec</code> fica lendo o stdin e não sai. Capturado com um <code>sleep</code> segurando a entrada e teto de 8 s:</p><pre>$ sleep 20 | timeout 8 codex exec -s read-only --skip-git-repo-check; echo \"saída: $?\"\nReading prompt from stdin...\nsaída: 124</pre><p>Sem o <code>timeout</code>, ficaria parado. A ponte manda o pedido pelo stdin e fecha com <code>-</code>; use <code>-o</code> para gravar só a mensagem final e, em CI, <code>--json</code> para o progresso em eventos.</p>"
+            "html": "<p>Sem pedido na linha de comando e com a entrada aberta, o <code>codex exec</code> fica lendo o stdin e nêo sai. Capturado com um <code>sleep</code> segurando a entrada e teto de 8 s:</p><pre>$ sleep 20 | timeout 8 codex exec -s read-only --skip-git-repo-check; echo \"saída: $?\"\nReading prompt from stdin...\nsaída: 124</pre><p>Sem o <code>timeout</code>, ficaria parado. A ponte manda o pedido pelo stdin e fecha com <code>-</code>; use <code>-o</code> para gravar só a mensagem final e, em CI, <code>--json</code> para o progresso em eventos.</p>"
           }
         ]
       }
@@ -136,7 +136,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Ensaio da ponte, depois uma revisão cruzada de verdade.",
+      "sub": "Ensaio da ponte, depois uma revisêo cruzada de verdade.",
       "exercicios": [
         {
           "id": "e1",
@@ -147,9 +147,9 @@
         },
         {
           "id": "e2",
-          "titulo": "E16 · Revisão cruzada e reconciliação",
+          "titulo": "E16 · Revisêo cruzada e reconciliaçêo",
           "min": "20 min",
-          "texto": "Rode a ponte de verdade sobre o gera-avalia.sh (ou sobre um diff seu: git diff main...HEAD &gt; diff.txt e peça a revisão do diff.txt). Escreva revisao.md com uma linha por achado.",
+          "texto": "Rode a ponte de verdade sobre o gera-avalia.sh (ou sobre um diff seu: git diff main...HEAD &gt; diff.txt e peça a revisêo do diff.txt). Escreva revisao.md com uma linha por achado.",
           "pronto": "<code>tail -1 revisao-codex.txt | grep -cE '^-? ?(APROVADO|FALTA:)'</code> → <code>1</code> (a última linha traz o veredito; o Codex às vezes põe \"- \" na frente), e <code>grep -cE \"^(aceito|rejeitado|aberto):\" revisao.md</code> é igual ao número de achados."
         }
       ]
@@ -160,32 +160,32 @@
       "perguntas": [
         {
           "p": "Por onde começar o nível de um papel novo?",
-          "opcoes": ["Pelo menor que resolve, subindo só se errar", "Sempre executor", "Pelo mais barato, sem exceção", "Pelo mais forte, para garantir, e desce depois se sobrar cota"],
+          "opcoes": ["Pelo menor que resolve, subindo só se errar", "Sempre executor", "Pelo mais barato, sem exceçêo", "Pelo mais forte, para garantir, e desce depois se sobrar cota"],
           "certa": 0,
-          "explica": "Regra 1 do ROTEAMENTO.md. Cada chamada consome a cota; subir é decisão com motivo.",
+          "explica": "Regra 1 do ROTEAMENTO.md. Cada chamada consome a cota; subir é decisêo com motivo.",
           "ref": "diagrama",
           "cert": true
         },
         {
           "p": "O que o revisor Codex deve receber?",
-          "opcoes": ["O mesmo briefing da tarefa e o artefato real (arquivo, diff, teste)", "A conversa inteira do Claude", "Só o nome do arquivo", "Um resumo do que o Claude fez, para o revisor não gastar cota relendo tudo"],
+          "opcoes": ["O mesmo briefing da tarefa e o artefato real (arquivo, diff, teste)", "A conversa inteira do Claude", "Só o nome do arquivo", "Um resumo do que o Claude fez, para o revisor nêo gastar cota relendo tudo"],
           "certa": 0,
-          "explica": "É a regra única do cartão de rotas. Reconto vago esconde o defeito que o revisor deveria achar.",
+          "explica": "É a regra única do cartêo de rotas. Reconto vago esconde o defeito que o revisor deveria achar.",
           "ref": "passos",
           "cert": true
         },
         {
           "p": "A ponte recebeu o sandbox danger-full-access. O que acontece?",
-          "opcoes": ["Roda com acesso total", "Recusa com saída 2: só read-only e workspace-write passam", "Cai para read-only calada e segue rodando sem avisar quem chamou", "Pede confirmação"],
+          "opcoes": ["Roda com acesso total", "Recusa com saída 2: só read-only e workspace-write passam", "Cai para read-only calada e segue rodando sem avisar quem chamou", "Pede confirmaçêo"],
           "certa": 1,
           "explica": "A política está no próprio script: \"sandbox recusado pela POLITICA\" e código 2.",
           "ref": "codigo"
         },
         {
           "p": "O Codex apontou dois achados. O que fazer com eles?",
-          "opcoes": ["Pedir uma terceira opinião", "Ignorar, porque o Claude já tinha aprovado", "Aplicar os dois sem conferir", "Reconciliar cada um: aceito (com prova), rejeitado com evidência ou em aberto com dono"],
+          "opcoes": ["Pedir uma terceira opiniêo", "Ignorar, porque o Claude já tinha aprovado", "Aplicar os dois sem conferir", "Reconciliar cada um: aceito (com prova), rejeitado com evidência ou em aberto com dono"],
           "certa": 3,
-          "explica": "Concordância e discordância não provam nada sozinhas. Cada achado ganha um destino, e o aceito se confirma rodando o ensaio de novo.",
+          "explica": "Concordância e discordância nêo provam nada sozinhas. Cada achado ganha um destino, e o aceito se confirma rodando o ensaio de novo.",
           "ref": "codigo"
         }
       ]

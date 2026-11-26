@@ -2,8 +2,8 @@
   "id": "loop-r-eng-multiagente-v72",
   "lang": "pt-BR",
   "url": "https://inematds.github.io/loop-r-eng-multiagente-v72/",
-  "nome": "Multiagente e Orquestração",
-  "sub": "Formação LOOP-R Engenharia · curso 3",
+  "nome": "Multiagente e Orquestraçêo",
+  "sub": "Formaçêo LOOP-R Engenharia · curso 3",
   "volta": {
     "t": "Área LOOP-R Engenharia",
     "href": "https://eventos.inema.pro/loop-r-engenharia/"
@@ -11,11 +11,11 @@
   "lado_card": {
     "rot": "O projeto de treino",
     "t": "INEMA Agent Runtime (código aberto)",
-    "texto": "Time de três papéis, verificador de critérios, ponte para o Codex e guarda de colisão. As aulas usam um clone dele, kit 0.3.0.",
+    "texto": "Time de três papéis, verificador de critérios, ponte para o Codex e guarda de colisêo. As aulas usam um clone dele, kit 0.3.0.",
     "link": "Abrir o guia do kit",
     "href": "https://inematds.github.io/inema-agent-runtime/guia/"
   },
-  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · Formação LOOP-R Engenharia, curso 3 de 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/inema-agent-runtime\">inema-agent-runtime no GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · Formaçêo LOOP-R Engenharia, curso 3 de 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/inema-agent-runtime\">inema-agent-runtime no GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
   "videos": {
     "claude-codex": {
       "titulo": "Claude e Codex com o mesmo contexto",
@@ -27,12 +27,12 @@
     }
   },
   "inicio": {
-    "kicker": "Formação LOOP-R Engenharia · curso 3 de 6 · 8 aulas",
-    "titulo": "Multiagente e Orquestração: mais agentes só quando o trabalho paga o time",
-    "lead": "Quando não abrir o segundo agente, subagente que devolve pouco, fan-out com teto, gerador e avaliador separados, worktree e sandbox por papel, fila que retoma sem colidir e o time Claude + Codex. Cada prática tem ensaio sem gastar cota e saída real de terminal.",
+    "kicker": "Formaçêo LOOP-R Engenharia · curso 3 de 6 · 8 aulas",
+    "titulo": "Multiagente e Orquestraçêo: mais agentes só quando o trabalho paga o time",
+    "lead": "Quando nêo abrir o segundo agente, subagente que devolve pouco, fan-out com teto, gerador e avaliador separados, worktree e sandbox por papel, fila que retoma sem colidir e o time Claude + Codex. Cada prática tem ensaio sem gastar cota e saída real de terminal.",
     "cta": "Começar pela aula 1",
     "cta2": {
-      "t": "Ver a área da formação",
+      "t": "Ver a área da formaçêo",
       "href": "https://eventos.inema.pro/loop-r-engenharia/"
     },
     "capa_alt": "Bancada escura com três caixas de terminal ligadas por cabos a uma caixa central com um mostrador.",
@@ -55,7 +55,7 @@
       }
     ],
     "cursos": {
-      "titulo": "Os 6 cursos da formação",
+      "titulo": "Os 6 cursos da formaçêo",
       "sub": "Este é o curso 3. Cada aula aponta para o curso que é dono do assunto. Ordem sugerida: 0 → 1 → 2 → 3 → 4 → 5.",
       "abrir": "Abrir o curso",
       "itens": [
@@ -68,36 +68,36 @@
         },
         {
           "rot": "Curso 1",
-          "t": "Verificação e evals",
+          "t": "Verificaçêo e evals",
           "l": "Avaliador separado e cético, testes congelados, reward hacking, conjunto de ouro e juiz calibrado.",
           "href": "https://inematds.github.io/loop-r-eng-verificacao-v72/",
           "img": "assets/img/cursos/verificacao.jpg"
         },
         {
           "rot": "Curso 2",
-          "t": "Execução longa",
-          "l": "O kit de sete arquivos, goal.md nível 3+, contexto em faixas, handoff, loop headless e medição.",
+          "t": "Execuçêo longa",
+          "l": "O kit de sete arquivos, goal.md nível 3+, contexto em faixas, handoff, loop headless e mediçêo.",
           "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/",
           "img": "assets/img/cursos/execucao-longa.jpg"
         },
         {
           "rot": "Curso 3 · você está aqui",
-          "t": "Multiagente e orquestração",
-          "l": "Quando não usar, subagentes, gerador × avaliador, worktrees, filas e o time Claude + Codex.",
+          "t": "Multiagente e orquestraçêo",
+          "l": "Quando nêo usar, subagentes, gerador × avaliador, worktrees, filas e o time Claude + Codex.",
           "href": "https://inematds.github.io/loop-r-eng-multiagente-v72/",
           "img": "assets/img/cursos/multiagente.jpg"
         },
         {
           "rot": "Curso 4",
           "t": "Segurança do loop autônomo",
-          "l": "Tríade letal, Regra de Dois, injeção pelo conteúdo lido, hooks de guarda e sandbox.",
+          "l": "Tríade letal, Regra de Dois, injeçêo pelo conteúdo lido, hooks de guarda e sandbox.",
           "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/",
           "img": "assets/img/cursos/seguranca.jpg"
         },
         {
           "rot": "Curso 5",
           "t": "O loop que aprende",
-          "l": "Hipótese com número, experimento, promoção e rollback, lições e o risco de otimizar contra o medidor.",
+          "l": "Hipótese com número, experimento, promoçêo e rollback, lições e o risco de otimizar contra o medidor.",
           "href": "https://inematds.github.io/loop-r-eng-aprende-v72/",
           "img": "assets/img/cursos/aprende.jpg"
         }
@@ -120,15 +120,15 @@
           "Decidir entre um agente, sequência, paralelo ou híbrido com uma matriz de sinais.",
           "Escrever subagentes só de leitura com retorno curto e rodar fan-out com teto por item.",
           "Separar gerador e avaliador, dar worktree a quem escreve e sandbox a quem revisa.",
-          "Retomar filas sem colisão e desenhar o time.md do seu loop, conferido por script."
+          "Retomar filas sem colisêo e desenhar o time.md do seu loop, conferido por script."
         ]
       },
       {
         "t": "Antes de começar",
         "itens": [
           "Linux com git, bash, Python 3 e Node 20+ (no macOS, os ensaios pedem <code>xargs -d</code>, <code>flock</code> e <code>timeout</code>: instale coreutils, findutils e flock pelo Homebrew); Claude Code e Codex CLI entrando pela sua assinatura.",
-          "Os ensaios usam agente falso e não gastam cota. As chamadas reais do curso (aulas 2, 3, 4, 7 e 8) são pequenas.",
-          "Recomendado: os cursos 0 (Base), 1 (Verificação) e 2 (Execução longa) da formação."
+          "Os ensaios usam agente falso e nêo gastam cota. As chamadas reais do curso (aulas 2, 3, 4, 7 e 8) sêo pequenas.",
+          "Recomendado: os cursos 0 (Base), 1 (Verificaçêo) e 2 (Execuçêo longa) da formaçêo."
         ]
       }
     ]
@@ -147,7 +147,7 @@
     "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
     "copiar": "Copiar",
     "copiado": "Copiado",
-    "selo_simulacao": "Simulação: exemplo ilustrativo",
+    "selo_simulacao": "Simulaçêo: exemplo ilustrativo",
     "selo_real": "Exemplo do repositório",
     "pronto_quando": "Pronto quando:",
     "fiz": "Fiz este exercício",
@@ -156,8 +156,8 @@
     "de": "de",
     "cert_tag": "competência",
     "correto": "Correto",
-    "errado": "Não é essa",
-    "quiz_aguarda": "Escolha uma alternativa. A explicação aparece depois da sua tentativa.",
+    "errado": "Nêo é essa",
+    "quiz_aguarda": "Escolha uma alternativa. A explicaçêo aparece depois da sua tentativa.",
     "proxima_pergunta": "Próxima pergunta",
     "quiz_ver": "Ver resultado",
     "quiz_fim": "Teste concluído",
@@ -184,7 +184,7 @@
     "baixar_ics": "Baixar para o calendário (.ics)",
     "ind_estudo": "Estudo (aulas)",
     "ind_pratica": "Prática declarada",
-    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovação vem na prova da certificação.",
+    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovaçêo vem na prova da certificaçêo.",
     "estudo": {
       "titulo": "Seu estudo",
       "continuar": "Continuar de onde parei",
@@ -197,7 +197,7 @@
       "notas": "Minhas anotações",
       "dados": "Copiar meus dados",
       "sem_testes": "Nenhum teste feito ainda. O teste fica no fim de cada aula.",
-      "nao_fez": "teste ainda não feito",
+      "nao_fez": "teste ainda nêo feito",
       "ultimo": "Último",
       "melhor": "Melhor",
       "tentativas": "tentativas",
@@ -206,21 +206,21 @@
       "rever": "Para rever",
       "resposta": "Resposta certa:",
       "ir_teste": "Refazer o teste",
-      "sem_notas": "Nenhuma anotação ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
+      "sem_notas": "Nenhuma anotaçêo ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
       "so_marcado": "(só marcado)",
       "marcar": "Marcar",
       "anotar": "Anotar",
       "salvar": "Salvar",
       "apagar": "Apagar marca",
       "fechar": "Fechar",
-      "nota_ph": "Escreva sua anotação sobre este trecho…",
+      "nota_ph": "Escreva sua anotaçêo sobre este trecho…",
       "um_bloco": "Marque dentro de um parágrafo só.",
-      "nao_marca": "Este trecho não pode ser marcado.",
-      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e não apaga nada.",
+      "nao_marca": "Este trecho nêo pode ser marcado.",
+      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e nêo apaga nada.",
       "exportar": "Baixar cópia",
       "importar": "Carregar cópia",
       "import_ok": "Cópia carregada ({n} itens). Atualizando a página…",
-      "import_erro": "Arquivo não reconhecido. Nada foi alterado.",
+      "import_erro": "Arquivo nêo reconhecido. Nada foi alterado.",
       "import_outro": "Esta cópia é de outro curso. Nada foi alterado.",
       "export_ok": "Cópia baixada."
     },
@@ -232,7 +232,7 @@
     "conv_ruim": "Escolha fraca",
     "conv_fim": "Fim da conversa",
     "conv_placar": "Você fez {p} de {m} pontos possíveis.",
-    "conv_licao": "Lição:",
+    "conv_licao": "Liçêo:",
     "conv_recomecar": "Recomeçar a conversa",
     "conv_feita": "Seu melhor placar: {p} de {m} pontos."
   },

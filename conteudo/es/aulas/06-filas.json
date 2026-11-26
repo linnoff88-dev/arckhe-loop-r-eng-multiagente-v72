@@ -129,7 +129,7 @@
         {
           "rot": "Terminal · ensayo sin cuota (dos sesiones fingidas por el session_id)",
           "icone": "cadeado",
-          "conteudo": "cd ~/treino-multi\nexport INEMA_RUNTIME_ESTADO=${TMPDIR:-/tmp}/ensaio-multi/colisao; rm -rf $INEMA_RUNTIME_ESTADO\nG=runtime/mods/runtime-guarda/hooks/colisao.mjs\nj() { printf '{\"session_id\":\"%s\",\"cwd\":\"%s\",\"tool_input\":{\"file_path\":\"notas.md\"}}' \"$1\" \"$PWD\"; }\necho \"rascunho\" > notas.md\nj sessao-AAAAAAAA | node $G pos                      # a sessão A acabou de editar notas.md\necho \"## A quer editar de novo\"; j sessao-AAAAAAAA | node $G pre; echo \"(saída $?)\"\necho \"## B quer editar o mesmo arquivo\"; j sessao-BBBBBBBB | node $G pre; echo; echo \"(saída $?)\""
+          "conteudo": "cd ~/treino-multi\nexport INEMA_RUNTIME_ESTADO=${TMPDIR:-/tmp}/ensaio-multi/colisao; rm -rf $INEMA_RUNTIME_ESTADO\nG=runtime/mods/runtime-guarda/hooks/colisao.mjs\nj() { printf '{\"session_id\":\"%s\",\"cwd\":\"%s\",\"tool_input\":{\"file_path\":\"notas.md\"}}' \"$1\" \"$PWD\"; }\necho \"rascunho\" > notas.md\nj sessao-AAAAAAAA | node $G pos                      # a sessêo A acabou de editar notas.md\necho \"## A quer editar de novo\"; j sessao-AAAAAAAA | node $G pre; echo \"(saída $?)\"\necho \"## B quer editar o mesmo arquivo\"; j sessao-BBBBBBBB | node $G pre; echo; echo \"(saída $?)\""
         }
       ],
       "saida": {
@@ -137,7 +137,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisão: Outra sessão (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>La misma sesión pasa callada. La otra recibe <code>\"permissionDecision\":\"ask\"</code>: Claude Code se detiene y pregunta. La ventana predeterminada es de 30 min (<code>INEMA_COLISAO_MIN</code>). <code>INEMA_RUNTIME_ESTADO</code> manda el registro a la carpeta de ensayo, para no mezclarlo con el tuyo real.</p>"
+            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisêo: Outra sessêo (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>La misma sesión pasa callada. La otra recibe <code>\"permissionDecision\":\"ask\"</code>: Claude Code se detiene y pregunta. La ventana predeterminada es de 30 min (<code>INEMA_COLISAO_MIN</code>). <code>INEMA_RUNTIME_ESTADO</code> manda el registro a la carpeta de ensayo, para no mezclarlo con el tuyo real.</p>"
           }
         ]
       }
@@ -205,7 +205,7 @@
           "titulo": "E14 · Guardia de colisión",
           "min": "10 min",
           "texto": "Ejecuta el ensayo de la guardia en el proyecto de entrenamiento.",
-          "pronto": "la sesión A sale sin texto y <code>(saída 0)</code>; la sesión B imprime <code>\"permissionDecision\":\"ask\"</code> con <code>Outra sessão (sessao-A) editou notas.md</code>."
+          "pronto": "la sesión A sale sin texto y <code>(saída 0)</code>; la sesión B imprime <code>\"permissionDecision\":\"ask\"</code> con <code>Outra sessêo (sessao-A) editou notas.md</code>."
         }
       ]
     },

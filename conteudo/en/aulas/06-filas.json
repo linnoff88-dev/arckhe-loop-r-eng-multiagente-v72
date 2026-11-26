@@ -137,7 +137,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisão: Outra sessão (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>The same session passes silently. The other one gets <code>\"permissionDecision\":\"ask\"</code>: Claude Code stops and asks. The default window is 30 min (<code>INEMA_COLISAO_MIN</code>). <code>INEMA_RUNTIME_ESTADO</code> sends the log to the rehearsal folder, so it does not mix with your real one.</p>"
+            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisêo: Outra sessêo (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>The same session passes silently. The other one gets <code>\"permissionDecision\":\"ask\"</code>: Claude Code stops and asks. The default window is 30 min (<code>INEMA_COLISAO_MIN</code>). <code>INEMA_RUNTIME_ESTADO</code> sends the log to the rehearsal folder, so it does not mix with your real one.</p>"
           }
         ]
       }
@@ -205,7 +205,7 @@
           "titulo": "E14 · Collision guard",
           "min": "10 min",
           "texto": "Run the guard rehearsal in the practice project.",
-          "pronto": "session A exits with no text and <code>(saída 0)</code>; session B prints <code>\"permissionDecision\":\"ask\"</code> with <code>Outra sessão (sessao-A) editou notas.md</code>."
+          "pronto": "session A exits with no text and <code>(saída 0)</code>; session B prints <code>\"permissionDecision\":\"ask\"</code> with <code>Outra sessêo (sessao-A) editou notas.md</code>."
         }
       ]
     },
