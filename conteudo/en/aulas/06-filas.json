@@ -64,7 +64,7 @@
         }
       ],
       "volta": "Crashed? On the next round, rodando/ goes back to entrada/",
-      "legenda": "The truly durable queue, with a database, retries and gates, is the inemaccbot from the Queues course. Here is the minimal idea, so you can see the failure."
+      "legenda": "The truly durable queue, with a database, retries and gates, is the ARCKHÉccbot from the Queues course. Here is the minimal idea, so you can see the failure."
     },
     {
       "tipo": "simfila",
@@ -104,7 +104,7 @@
         {
           "rot": "Terminal · no-quota rehearsal",
           "icone": "terminal",
-          "conteudo": "cd ~/jornada-agentes                      # git clone https://github.com/inematds/jornada-agentes.git ~/jornada-agentes\nE=${TMPDIR:-/tmp}/ensaio-multi/fila; rm -rf $E && mkdir -p $E/bin\ncat > $E/bin/claude <<'SH'\n#!/usr/bin/env bash\n# FAKE claude: logs who ran what, takes 1 s and answers (no model is called)\necho \"$PPID $2\" >> \"${E_LOG:?}\"; sleep 1; echo \"resposta para: $2\"\nSH\nchmod +x $E/bin/claude; export PATH=$E/bin:$PATH E_LOG=$E/execucoes.log\nnova_fila() { rm -rf $E/fila $E_LOG; mkdir -p $E/fila/entrada; for i in 1 2 3 4; do echo \"tarefa $i\" > $E/fila/entrada/0$i.md; done; }\nF=./ferramentas/fila-caseira.sh\n\necho \"## 1) roda e é interrompida no meio\"\nnova_fila; timeout -s INT 2.5 $F $E/fila\necho \"rodando: $(ls $E/fila/rodando) · feito: $(ls $E/fila/feito | tr '\\n' ' ')\"\necho \"## 2) roda de novo: retoma\"\n$F $E/fila | tail -1\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas\"\n\necho \"## 3) duas filas na mesma pasta, ao mesmo tempo\"\nnova_fila; $F $E/fila > $E/a.log 2>&1 & $F $E/fila > $E/b.log 2>&1 & wait\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas · repetidas: $(cut -d' ' -f2- $E_LOG | sort | uniq -d | tr '\\n' ' ')\"\n\necho \"## 4) a mesma coisa com flock\"\nnova_fila; flock -n $E/fila.lock $F $E/fila > $E/a.log 2>&1 &\nsleep 0.3; flock -n $E/fila.lock $F $E/fila || echo \"outra fila já roda nesta pasta (saída $?)\"; wait\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas\""
+          "conteudo": "cd ~/jornada-agentes                      # git clone https://github.com/linnoff88-dev/jornada-agentes.git ~/jornada-agentes\nE=${TMPDIR:-/tmp}/ensaio-multi/fila; rm -rf $E && mkdir -p $E/bin\ncat > $E/bin/claude <<'SH'\n#!/usr/bin/env bash\n# FAKE claude: logs who ran what, takes 1 s and answers (no model is called)\necho \"$PPID $2\" >> \"${E_LOG:?}\"; sleep 1; echo \"resposta para: $2\"\nSH\nchmod +x $E/bin/claude; export PATH=$E/bin:$PATH E_LOG=$E/execucoes.log\nnova_fila() { rm -rf $E/fila $E_LOG; mkdir -p $E/fila/entrada; for i in 1 2 3 4; do echo \"tarefa $i\" > $E/fila/entrada/0$i.md; done; }\nF=./ferramentas/fila-caseira.sh\n\necho \"## 1) roda e é interrompida no meio\"\nnova_fila; timeout -s INT 2.5 $F $E/fila\necho \"rodando: $(ls $E/fila/rodando) · feito: $(ls $E/fila/feito | tr '\\n' ' ')\"\necho \"## 2) roda de novo: retoma\"\n$F $E/fila | tail -1\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas\"\n\necho \"## 3) duas filas na mesma pasta, ao mesmo tempo\"\nnova_fila; $F $E/fila > $E/a.log 2>&1 & $F $E/fila > $E/b.log 2>&1 & wait\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas · repetidas: $(cut -d' ' -f2- $E_LOG | sort | uniq -d | tr '\\n' ' ')\"\n\necho \"## 4) a mesma coisa com flock\"\nnova_fila; flock -n $E/fila.lock $F $E/fila > $E/a.log 2>&1 &\nsleep 0.3; flock -n $E/fila.lock $F $E/fila || echo \"outra fila já roda nesta pasta (saída $?)\"; wait\necho \"execuções: $(wc -l < $E_LOG) para 4 tarefas\""
         }
       ],
       "saida": {
@@ -129,7 +129,7 @@
         {
           "rot": "Terminal · no-quota rehearsal (two sessions faked by the session_id)",
           "icone": "cadeado",
-          "conteudo": "cd ~/treino-multi\nexport INEMA_RUNTIME_ESTADO=${TMPDIR:-/tmp}/ensaio-multi/colisao; rm -rf $INEMA_RUNTIME_ESTADO\nG=runtime/mods/runtime-guarda/hooks/colisao.mjs\nj() { printf '{\"session_id\":\"%s\",\"cwd\":\"%s\",\"tool_input\":{\"file_path\":\"notas.md\"}}' \"$1\" \"$PWD\"; }\necho \"rascunho\" > notas.md\nj sessao-AAAAAAAA | node $G pos                      # session A just edited notas.md\necho \"## A quer editar de novo\"; j sessao-AAAAAAAA | node $G pre; echo \"(saída $?)\"\necho \"## B quer editar o mesmo arquivo\"; j sessao-BBBBBBBB | node $G pre; echo; echo \"(saída $?)\""
+          "conteudo": "cd ~/treino-multi\nexport ARCKHÉ_RUNTIME_ESTADO=${TMPDIR:-/tmp}/ensaio-multi/colisao; rm -rf $ARCKHÉ_RUNTIME_ESTADO\nG=runtime/mods/runtime-guarda/hooks/colisao.mjs\nj() { printf '{\"session_id\":\"%s\",\"cwd\":\"%s\",\"tool_input\":{\"file_path\":\"notas.md\"}}' \"$1\" \"$PWD\"; }\necho \"rascunho\" > notas.md\nj sessao-AAAAAAAA | node $G pos                      # session A just edited notas.md\necho \"## A quer editar de novo\"; j sessao-AAAAAAAA | node $G pre; echo \"(saída $?)\"\necho \"## B quer editar o mesmo arquivo\"; j sessao-BBBBBBBB | node $G pre; echo; echo \"(saída $?)\""
         }
       ],
       "saida": {
@@ -137,7 +137,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisêo: Outra sessêo (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>The same session passes silently. The other one gets <code>\"permissionDecision\":\"ask\"</code>: Claude Code stops and asks. The default window is 30 min (<code>INEMA_COLISAO_MIN</code>). <code>INEMA_RUNTIME_ESTADO</code> sends the log to the rehearsal folder, so it does not mix with your real one.</p>"
+            "html": "<pre>## A quer editar de novo\n(saída 0)\n## B quer editar o mesmo arquivo\n{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Guarda de colisêo: Outra sessêo (sessao-A) editou notas.md agora há pouco. Seguir mesmo assim, usar outra cópia (worktree) ou cancelar?\"}}\n(saída 0)</pre><p>The same session passes silently. The other one gets <code>\"permissionDecision\":\"ask\"</code>: Claude Code stops and asks. The default window is 30 min (<code>ARCKHÉ_COLISAO_MIN</code>). <code>ARCKHÉ_RUNTIME_ESTADO</code> sends the log to the rehearsal folder, so it does not mix with your real one.</p>"
           }
         ]
       }
@@ -145,7 +145,7 @@
     {
       "tipo": "passos",
       "titulo": "Collisions that have already happened on this machine",
-      "sub": "From LESSONS.md of the INEMA monitoring project, with dates. Each one became a one-line rule.",
+      "sub": "From LESSONS.md of the ARCKHÉ monitoring project, with dates. Each one became a one-line rule.",
       "passos": [
         {
           "titulo": "Scratchpad",
@@ -288,23 +288,23 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "Queues course (do-chat-ao-agente): the durable queue with inemaccbot",
-          "href": "https://inematds.github.io/do-chat-ao-agente-filas-v72/en/",
+          "t": "Queues course (do-chat-ao-agente): the durable queue with ARCKHÉccbot",
+          "href": "https://linnoff88-dev.github.io/arckhe-/en/",
           "icone": "fila"
         },
         {
           "t": "fila-caseira.sh in jornada-agentes",
-          "href": "https://github.com/inematds/jornada-agentes/blob/main/ferramentas/fila-caseira.sh",
+          "href": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/ferramentas/fila-caseira.sh",
           "icone": "terminal"
         },
         {
           "t": "colisao.mjs (the runtime's collision guard)",
-          "href": "https://github.com/inematds/inema-agent-runtime/blob/main/runtime/mods/runtime-guarda/hooks/colisao.mjs",
+          "href": "https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime/blob/main/runtime/mods/runtime-guarda/hooks/colisao.mjs",
           "icone": "cadeado"
         },
         {
           "t": "Course 4 of the track: hooks as a guard",
-          "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/en/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/en/",
           "icone": "escudo"
         }
       ]

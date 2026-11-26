@@ -77,17 +77,17 @@
         {
           "rot": "goal-saudacao.md · os critérios (o gerador nêo edita)",
           "icone": "alvo",
-          "conteudo": "# Goal — saudaçêo\n\n## Critérios de pronto\n- [ ] `cat saudacao.txt` → `Olá, comunidade INEMA`\n- [ ] `wc -l < saudacao.txt` → `1`"
+          "conteudo": "# Goal — saudaçêo\n\n## Critérios de pronto\n- [ ] `cat saudacao.txt` → `Olá, comunidade ARCKHÉ`\n- [ ] `wc -l < saudacao.txt` → `1`"
         },
         {
           "rot": "Terminal · ensaio sem cota (gerador falso que erra e depois corrige)",
           "icone": "terminal",
-          "conteudo": "cd ~/treino-multi && chmod +x gera-avalia.sh && rm -f saudacao.txt\nE=${TMPDIR:-/tmp}/ensaio-multi/gera; rm -rf $E && mkdir -p $E\ncat > $E/gerador-falso.sh <<'SH'\n#!/usr/bin/env bash\nentrada=$(cat)\ncase \"$entrada\" in\n  *reprovou*) echo \"Olá, comunidade INEMA\" > saudacao.txt ;;   # 2ª vez: leu o parecer\n  *) printf 'Olá comunidade INEMA\\n\\n' > saudacao.txt ;;      # 1ª vez: vírgula e linha a mais\nesac\necho \"Pronto! saudacao.txt criado conforme pedido.\"\nSH\nchmod +x $E/gerador-falso.sh\nGERADOR=$E/gerador-falso.sh ./gera-avalia.sh goal-saudacao.md \"Crie saudacao.txt com uma linha: Olá, comunidade INEMA\"\necho \"saída: $?\""
+          "conteudo": "cd ~/treino-multi && chmod +x gera-avalia.sh && rm -f saudacao.txt\nE=${TMPDIR:-/tmp}/ensaio-multi/gera; rm -rf $E && mkdir -p $E\ncat > $E/gerador-falso.sh <<'SH'\n#!/usr/bin/env bash\nentrada=$(cat)\ncase \"$entrada\" in\n  *reprovou*) echo \"Olá, comunidade ARCKHÉ\" > saudacao.txt ;;   # 2ª vez: leu o parecer\n  *) printf 'Olá comunidade ARCKHÉ\\n\\n' > saudacao.txt ;;      # 1ª vez: vírgula e linha a mais\nesac\necho \"Pronto! saudacao.txt criado conforme pedido.\"\nSH\nchmod +x $E/gerador-falso.sh\nGERADOR=$E/gerador-falso.sh ./gera-avalia.sh goal-saudacao.md \"Crie saudacao.txt com uma linha: Olá, comunidade ARCKHÉ\"\necho \"saída: $?\""
         },
         {
           "rot": "Terminal · real, com o Claude como gerador",
           "icone": "play",
-          "conteudo": "cd ~/treino-multi && rm -f saudacao.txt\n./gera-avalia.sh goal-saudacao.md \"Crie saudacao.txt com uma linha: Olá, comunidade INEMA\" < /dev/null\necho \"saída: $?\"; cat saudacao.txt"
+          "conteudo": "cd ~/treino-multi && rm -f saudacao.txt\n./gera-avalia.sh goal-saudacao.md \"Crie saudacao.txt com uma linha: Olá, comunidade ARCKHÉ\" < /dev/null\necho \"saída: $?\"; cat saudacao.txt"
         }
       ],
       "saida": {
@@ -95,7 +95,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>## ensaio (gerador falso)\nrodada 1 · gerador diz: Pronto! saudacao.txt criado conforme pedido.\nrodada 1 · avaliador: 0/2 critérios OK → REPROVADO\nrodada 2 · gerador diz: Pronto! saudacao.txt criado conforme pedido.\nrodada 2 · avaliador: 2/2 critérios OK → APROVADO\nsaída: 0\n\n## real (Claude como gerador)\nrodada 1 · gerador diz: Terminei: criei o `saudacao.txt`. Conferi o arquivo e ele tem uma linha só: `Olá, comunidade INEMA`. Nêo fiz commit.\nrodada 1 · avaliador: 2/2 critérios OK → APROVADO\nsaída: 0\nOlá, comunidade INEMA</pre><p>Na rodada 1 do ensaio o gerador disse \"pronto\" com a vírgula faltando e uma linha a mais; o avaliador reprovou os dois critérios. Os títulos com ## separam as duas execuções.</p>"
+            "html": "<pre>## ensaio (gerador falso)\nrodada 1 · gerador diz: Pronto! saudacao.txt criado conforme pedido.\nrodada 1 · avaliador: 0/2 critérios OK → REPROVADO\nrodada 2 · gerador diz: Pronto! saudacao.txt criado conforme pedido.\nrodada 2 · avaliador: 2/2 critérios OK → APROVADO\nsaída: 0\n\n## real (Claude como gerador)\nrodada 1 · gerador diz: Terminei: criei o `saudacao.txt`. Conferi o arquivo e ele tem uma linha só: `Olá, comunidade ARCKHÉ`. Nêo fiz commit.\nrodada 1 · avaliador: 2/2 critérios OK → APROVADO\nsaída: 0\nOlá, comunidade ARCKHÉ</pre><p>Na rodada 1 do ensaio o gerador disse \"pronto\" com a vírgula faltando e uma linha a mais; o avaliador reprovou os dois critérios. Os títulos com ## separam as duas execuções.</p>"
           },
           {
             "rot": "Gerador teimoso: o teto para",
@@ -217,9 +217,9 @@
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        { "t": "Curso 1 da formaçêo: Verificaçêo e evals (como escrever o avaliador)", "href": "https://inematds.github.io/loop-r-eng-verificacao-v72/", "icone": "check" },
-        { "t": "Receita R2: time de três papéis", "href": "https://github.com/inematds/inema-agent-runtime/blob/main/runtime/receitas/R2-time-tres-papeis.md", "icone": "robo" },
-        { "t": "verificar.mjs (26 linhas, leia inteiro)", "href": "https://github.com/inematds/inema-agent-runtime/blob/main/runtime/scripts/verificar.mjs", "icone": "terminal" },
+        { "t": "Curso 1 da formaçêo: Verificaçêo e evals (como escrever o avaliador)", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "check" },
+        { "t": "Receita R2: time de três papéis", "href": "https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime/blob/main/runtime/receitas/R2-time-tres-papeis.md", "icone": "robo" },
+        { "t": "verificar.mjs (26 linhas, leia inteiro)", "href": "https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime/blob/main/runtime/scripts/verificar.mjs", "icone": "terminal" },
         { "t": "Anthropic: harness design para apps de longa duraçêo (24/03/2026)", "href": "https://anthropic.com/engineering/harness-design-long-running-apps", "icone": "lupa" }
       ]
     }

@@ -215,9 +215,9 @@
       "tipo": "links",
       "titulo": "Continue por aqui",
       "links": [
-        { "t": "Próximo curso da formaçêo: Segurança do loop autônomo (curso 4)", "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/", "icone": "seta" },
-        { "t": "Área LOOP-R Engenharia", "href": "https://eventos.inema.pro/loop-r-engenharia/", "icone": "camadas" },
-        { "t": "INEMA Agent Runtime: guia do kit de treino", "href": "https://inematds.github.io/inema-agent-runtime/guia/", "icone": "robo" },
+        { "t": "Próximo curso da formaçêo: Segurança do loop autônomo (curso 4)", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "seta" },
+        { "t": "Área LOOP-R Engenharia", "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/", "icone": "camadas" },
+        { "t": "ARCKHÉ Agent Runtime: guia do kit de treino", "href": "https://linnoff88-dev.github.io/arckhe-/guia/", "icone": "robo" },
         { "t": "Claude Code: Run agents in parallel", "href": "https://code.claude.com/docs/en/agents", "icone": "lupa" }
       ]
     }

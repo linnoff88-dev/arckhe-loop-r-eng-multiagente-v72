@@ -1,29 +1,29 @@
 {
   "id": "loop-r-eng-multiagente-v72",
   "lang": "es",
-  "url": "https://inematds.github.io/loop-r-eng-multiagente-v72/es/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/es/",
   "nome": "Multiagente y Orquestación",
   "sub": "Formación LOOP-R Ingeniería · curso 3",
   "volta": {
     "t": "Área LOOP-R Ingeniería",
-    "href": "https://eventos.inema.pro/loop-r-engenharia/"
+    "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
   },
   "lado_card": {
     "rot": "El proyecto de práctica",
-    "t": "INEMA Agent Runtime (código abierto)",
+    "t": "ARCKHÉ Agent Runtime (código abierto)",
     "texto": "Equipo de tres roles, verificador de criterios, puente hacia Codex y guardia de colisión. Las clases usan un clon de él, kit 0.3.0.",
     "link": "Abrir la guía del kit",
-    "href": "https://inematds.github.io/inema-agent-runtime/guia/"
+    "href": "https://linnoff88-dev.github.io/arckhe-/guia/"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · Formación LOOP-R Ingeniería, curso 3 de 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/inema-agent-runtime\">inema-agent-runtime en GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · contenido abierto y gratuito · formato ARCKHÉ Learning v7.2 · Formación LOOP-R Ingeniería, curso 3 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/loop-r-engenharia/\">eventos.ARCKHÉ.pro/loop-r-engenharia</a> · <a href=\"https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime\">ARCKHÉ-agent-runtime en GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {
     "claude-codex": {
       "titulo": "Claude y Codex con el mismo contexto (video en portugués)",
       "duracao": "7 min 36 s",
-      "mp4": "https://github.com/inematds/agente-claude-codex/releases/download/video-v1.0.0/contexto-portatil-pt-16x9.mp4",
+      "mp4": "https://github.com/linnoff88-dev/agente-claude-codex/releases/download/video-v1.0.0/contexto-portatil-pt-16x9.mp4",
       "vtt": "assets/vtt/claude-codex.vtt",
       "poster": "assets/img/claude-codex-video.jpg",
-      "pagina": "https://inematds.github.io/agente-claude-codex/videos/"
+      "pagina": "https://linnoff88-dev.github.io/arckhe-/videos/"
     }
   },
   "inicio": {
@@ -33,7 +33,7 @@
     "cta": "Empezar por la clase 1",
     "cta2": {
       "t": "Ver el área de la formación",
-      "href": "https://eventos.inema.pro/loop-r-engenharia/"
+      "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
     },
     "capa_alt": "Banco de trabajo oscuro con tres cajas de terminal conectadas por cables a una caja central con un indicador.",
     "numeros": [
@@ -63,42 +63,42 @@
           "rot": "Curso 0",
           "t": "Base: anatomía del loop",
           "l": "Las cinco piezas, el harness, los motores de loop, el LOOP-R, criterio de terminado de 0 a 4 y topes.",
-          "href": "https://inematds.github.io/loop-r-eng-base-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/base.jpg"
         },
         {
           "rot": "Curso 1",
           "t": "Verificación y evals",
           "l": "Evaluador separado y escéptico, tests congelados, reward hacking, conjunto de oro y juez calibrado.",
-          "href": "https://inematds.github.io/loop-r-eng-verificacao-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/verificacao.jpg"
         },
         {
           "rot": "Curso 2",
           "t": "Ejecución larga",
           "l": "El kit de siete archivos, goal.md nivel 3+, contexto en franjas, handoff, loop headless y medición.",
-          "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/execucao-longa.jpg"
         },
         {
           "rot": "Curso 3 · estás aquí",
           "t": "Multiagente y orquestación",
           "l": "Cuándo no usarlo, subagentes, generador × evaluador, worktrees, colas y el equipo Claude + Codex.",
-          "href": "https://inematds.github.io/loop-r-eng-multiagente-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/multiagente.jpg"
         },
         {
           "rot": "Curso 4",
           "t": "Seguridad del loop autónomo",
           "l": "Tríada letal, Regla de Dos, inyección por el contenido leído, hooks de guardia y sandbox.",
-          "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/seguranca.jpg"
         },
         {
           "rot": "Curso 5",
           "t": "El loop que aprende",
           "l": "Hipótesis con número, experimento, promoción y rollback, lecciones y el riesgo de optimizar contra el medidor.",
-          "href": "https://inematds.github.io/loop-r-eng-aprende-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "img": "assets/img/cursos/aprende.jpg"
         }
       ]

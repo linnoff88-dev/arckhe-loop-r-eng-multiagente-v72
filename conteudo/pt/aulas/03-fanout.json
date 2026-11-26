@@ -222,7 +222,7 @@
         { "t": "Claude Code: Run agents in parallel (comparaçêo das formas)", "href": "https://code.claude.com/docs/en/agents", "icone": "camadas" },
         { "t": "Claude Code: Agent teams (experimental, limites)", "href": "https://code.claude.com/docs/en/agent-teams", "icone": "robo" },
         { "t": "Anthropic: How we built our multi-agent research system", "href": "https://www.anthropic.com/engineering/multi-agent-research-system", "icone": "lupa" },
-        { "t": "Curso 2 da formaçêo: loop headless com flock e teto", "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/", "icone": "seta" }
+        { "t": "Curso 2 da formaçêo: loop headless com flock e teto", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "seta" }
       ]
     }
   ]

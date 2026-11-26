@@ -227,7 +227,7 @@
         { "t": "Claude Code: Run parallel sessions with worktrees", "href": "https://code.claude.com/docs/en/worktrees", "icone": "git" },
         { "t": "Codex CLI: referência de comandos (exec --worktree, sandbox)", "href": "https://developers.openai.com/codex/cli/reference", "icone": "terminal" },
         { "t": "git worktree (documentaçêo do git)", "href": "https://git-scm.com/docs/git-worktree", "icone": "arquivo" },
-        { "t": "Curso 4 da formaçêo: sandbox de rede e de arquivos como segurança", "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/", "icone": "escudo" }
+        { "t": "Curso 4 da formaçêo: sandbox de rede e de arquivos como segurança", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "escudo" }
       ]
     }
   ]

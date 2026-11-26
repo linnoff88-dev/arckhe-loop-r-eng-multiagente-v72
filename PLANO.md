@@ -1,7 +1,7 @@
 # PLANO — Multiagente e Orquestraçêo (Formaçêo LOOP-R Engenharia, curso 3 de 6) · 19/10/2026
 
 Versões em que tudo foi rodado: Claude Code **2.1.303**, Codex CLI **0.163.0**, Node 24, bash, git. Docs oficiais lidas em 19/10/2026: Claude Code `sub-agents`, `agents` (comparaçêo), `agent-teams`, `worktrees`, `agent-view`; Codex `cli/reference`; Anthropic "How we built our multi-agent research system" (13/06/2025).
-Projeto de treino do aluno: um clone de `inematds/inema-agent-runtime` (kit 0.3.0, commit 5cb431b) em `~/treino-multi` — traz o time de três papéis, o `verificar.mjs`, a ponte `codex-exec.sh` e o `colisao.mjs`. A fila caseira vem de `inematds/jornada-agentes`.
+Projeto de treino do aluno: um clone de `linnoff88-dev/ARCKHÉ-agent-runtime` (kit 0.3.0, commit 5cb431b) em `~/treino-multi` — traz o time de três papéis, o `verificar.mjs`, a ponte `codex-exec.sh` e o `colisao.mjs`. A fila caseira vem de `linnoff88-dev/jornada-agentes`.
 Saídas de terminal com selo "real": capturadas em 19/10/2026 no scratchpad com os mesmos blocos das aulas (agente falso por variável ou por PATH; `TMPDIR` aponta a pasta de ensaio). Três chamadas reais pela assinatura: subagente explorador (aula 2), gerador Claude (aula 4) e revisêo pelo Codex (aula 7).
 Números: só do post da Anthropic (4× e 15× tokens; 90,2% na avaliaçêo interna de pesquisa deles) e das docs (qualitativo: "significativamente mais tokens"). Nêo há mediçêo local de multiagente; os tempos dos ensaios sêo de agente falso (sleep) e servem só para ver o paralelismo.
 
@@ -21,9 +21,9 @@ Fora do escopo (dono em outro curso): critério de pronto e avaliador cético a 
 Simulaçêo: `simfila` na aula 6 (interromper e retomar; uma tarefa falha na 1ª execuçêo).
 Vídeo publicado: "Claude e Codex com o mesmo contexto" (7 min 36 s, só PT) na aula 7.
 Imagens: capa + inicio + 8 heroes pelo Codex (uma por vez), sem texto; cartões dos 6 cursos reaproveitados do curso 0.
-Próximo curso da ordem: `https://inematds.github.io/loop-r-eng-seguranca-v72/` (curso 4; ainda nêo publicado em 19/10).
+Próximo curso da ordem: `https://linnoff88-dev.github.io/arckhe-/` (curso 4; ainda nêo publicado em 19/10).
 
 Achados nas fontes (nêo alteradas):
 - `jornada-agentes/ferramentas/fila-caseira.sh`: duas cópias na mesma pasta executam cada tarefa duas vezes (o `mv` que falha nêo pula a tarefa, e a retomada de uma cópia devolve à entrada o que a outra está rodando). Contorno ensinado: `flock -n`.
-- `inema-agent-runtime/.claude/agents/revisor.md`: diz "nêo altere arquivos", mas tem `Bash` — pode escrever. É política por instruçêo, nêo trava (curso 4).
-- `inema-agent-runtime/runtime/ROTEAMENTO.md` fixa nomes de modelo; o curso usa só os níveis.
+- `ARCKHÉ-agent-runtime/.claude/agents/revisor.md`: diz "nêo altere arquivos", mas tem `Bash` — pode escrever. É política por instruçêo, nêo trava (curso 4).
+- `ARCKHÉ-agent-runtime/runtime/ROTEAMENTO.md` fixa nomes de modelo; o curso usa só os níveis.

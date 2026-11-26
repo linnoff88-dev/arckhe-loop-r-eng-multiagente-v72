@@ -203,9 +203,9 @@
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        { "t": "Kit agente-claude-codex: prompts para usar os dois", "href": "https://github.com/inematds/agente-claude-codex/blob/main/prompts/05-usar-os-dois.md", "icone": "arquivo" },
-        { "t": "ROTEAMENTO.md do runtime (níveis e regras)", "href": "https://github.com/inematds/inema-agent-runtime/blob/main/runtime/ROTEAMENTO.md", "icone": "camadas" },
-        { "t": "Receita R1: Claude usa o Codex", "href": "https://github.com/inematds/inema-agent-runtime/blob/main/runtime/receitas/R1-claude-usa-codex.md", "icone": "terminal" },
+        { "t": "Kit agente-claude-codex: prompts para usar os dois", "href": "https://github.com/linnoff88-dev/agente-claude-codex/blob/main/prompts/05-usar-os-dois.md", "icone": "arquivo" },
+        { "t": "ROTEAMENTO.md do runtime (níveis e regras)", "href": "https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime/blob/main/runtime/ROTEAMENTO.md", "icone": "camadas" },
+        { "t": "Receita R1: Claude usa o Codex", "href": "https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime/blob/main/runtime/receitas/R1-claude-usa-codex.md", "icone": "terminal" },
         { "t": "Codex CLI: referência de comandos", "href": "https://developers.openai.com/codex/cli/reference", "icone": "lupa" }
       ]
     }

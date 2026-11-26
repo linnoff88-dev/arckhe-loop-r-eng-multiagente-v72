@@ -146,12 +146,12 @@
         {
           "rot": "Terminal · proyecto de entrenamiento del curso (una vez)",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/inema-agent-runtime.git ~/treino-multi\ncd ~/treino-multi && git log -1 --format='%h %cs'   # testado em 5cb431b 2026-10-05"
+          "conteudo": "git clone https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime.git ~/treino-multi\ncd ~/treino-multi && git log -1 --format='%h %cs'   # testado em 5cb431b 2026-10-05"
         },
         {
           "rot": "decide.py · guárdalo en ~/treino-multi/",
           "icone": "arquivo",
-          "conteudo": "# decide.py — matriz de decisión del arquiteto-de-execucao (inematds/agenteexecuta), en código\n# Uso: python3 decide.py tarefas.txt\n# tarefas.txt: un bloque por tarea; \"# nome\" abre el bloque; después, un código por línea:\n#   S1..S6 = señales de secuencia, P1..P7 = señales de paralelo,\n#   simples = tarea pequeña (no aplica la matriz), erro-caro = costo de error alto\nimport sys\n\nSEQ = {\"S1\": \"depende da saída anterior\", \"S2\": \"contexto compartilhado grande\",\n       \"S3\": \"decisões precisam ficar consistentes\", \"S4\": \"erro inicial contamina várias tarefas\",\n       \"S5\": \"juntar versões divergentes sai caro\", \"S6\": \"uma etapa ensina a seguinte\"}\nPAR = {\"P1\": \"tarefas independentes\", \"P2\": \"entradas congeladas\",\n       \"P3\": \"cada saída se valida sozinha\", \"P4\": \"trabalho mecânico ou determinístico\",\n       \"P5\": \"contexto pequeno por tarefa\", \"P6\": \"urgência alta\", \"P7\": \"há máquina sobrando\"}\n\ndef decide(nome, cods):\n    print(f\"# {nome}\")\n    for c in cods:\n        if c not in SEQ and c not in PAR and c not in (\"simples\", \"erro-caro\"):\n            print(f\"aviso: código desconhecido '{c}' (ignorado)\")\n    if \"simples\" in cods:\n        print(\"decisêo: direto (um agente só, sem matriz)\\n\")\n        return\n    s = sum(c in SEQ for c in cods)\n    p = sum(c in PAR for c in cods)\n    if abs(s - p) >= 2:\n        d = \"sequencial\" if s > p else \"paralelo\"\n    else:\n        d = \"híbrido\"\n    print(f\"sequência: {s} · paralelo: {p} · diferença: {abs(s - p)}\")\n    print(f\"decisêo: {d}\")\n    if \"erro-caro\" in cods:\n        print(\"custo de erro alto: planejamento e revisêo centralizados\")\n    print()\n\nnome, cods = None, []\nfor linha in open(sys.argv[1], encoding=\"utf-8\"):\n    linha = linha.strip()\n    if linha.startswith(\"#\"):\n        if nome:\n            decide(nome, cods)\n        nome, cods = linha.lstrip(\"# \").strip(), []\n    elif linha:\n        cods.append(linha.split()[0])\nif nome:\n    decide(nome, cods)"
+          "conteudo": "# decide.py — matriz de decisión del arquiteto-de-execucao (linnoff88-dev/agenteexecuta), en código\n# Uso: python3 decide.py tarefas.txt\n# tarefas.txt: un bloque por tarea; \"# nome\" abre el bloque; después, un código por línea:\n#   S1..S6 = señales de secuencia, P1..P7 = señales de paralelo,\n#   simples = tarea pequeña (no aplica la matriz), erro-caro = costo de error alto\nimport sys\n\nSEQ = {\"S1\": \"depende da saída anterior\", \"S2\": \"contexto compartilhado grande\",\n       \"S3\": \"decisões precisam ficar consistentes\", \"S4\": \"erro inicial contamina várias tarefas\",\n       \"S5\": \"juntar versões divergentes sai caro\", \"S6\": \"uma etapa ensina a seguinte\"}\nPAR = {\"P1\": \"tarefas independentes\", \"P2\": \"entradas congeladas\",\n       \"P3\": \"cada saída se valida sozinha\", \"P4\": \"trabalho mecânico ou determinístico\",\n       \"P5\": \"contexto pequeno por tarefa\", \"P6\": \"urgência alta\", \"P7\": \"há máquina sobrando\"}\n\ndef decide(nome, cods):\n    print(f\"# {nome}\")\n    for c in cods:\n        if c not in SEQ and c not in PAR and c not in (\"simples\", \"erro-caro\"):\n            print(f\"aviso: código desconhecido '{c}' (ignorado)\")\n    if \"simples\" in cods:\n        print(\"decisêo: direto (um agente só, sem matriz)\\n\")\n        return\n    s = sum(c in SEQ for c in cods)\n    p = sum(c in PAR for c in cods)\n    if abs(s - p) >= 2:\n        d = \"sequencial\" if s > p else \"paralelo\"\n    else:\n        d = \"híbrido\"\n    print(f\"sequência: {s} · paralelo: {p} · diferença: {abs(s - p)}\")\n    print(f\"decisêo: {d}\")\n    if \"erro-caro\" in cods:\n        print(\"custo de erro alto: planejamento e revisêo centralizados\")\n    print()\n\nnome, cods = None, []\nfor linha in open(sys.argv[1], encoding=\"utf-8\"):\n    linha = linha.strip()\n    if linha.startswith(\"#\"):\n        if nome:\n            decide(nome, cods)\n        nome, cods = linha.lstrip(\"# \").strip(), []\n    elif linha:\n        cods.append(linha.split()[0])\nif nome:\n    decide(nome, cods)"
         },
         {
           "rot": "tarefas.txt · cuatro tareas de ejemplo",
@@ -289,12 +289,12 @@
         },
         {
           "t": "Skill arquiteto-de-execucao (matriz y límites operativos)",
-          "href": "https://github.com/inematds/agenteexecuta",
+          "href": "https://github.com/linnoff88-dev/agenteexecuta",
           "icone": "arquivo"
         },
         {
           "t": "Curso 0 de la formación: el loop en cinco piezas",
-          "href": "https://inematds.github.io/loop-r-eng-base-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "icone": "seta"
         }
       ]
